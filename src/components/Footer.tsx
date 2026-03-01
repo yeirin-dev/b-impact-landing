@@ -1,25 +1,32 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-slate-200/80 py-12">
+    <footer className="bg-white border-t border-slate-200/80 py-12" itemScope itemType="https://schema.org/Organization">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Brand */}
           <div className="space-y-4 max-w-sm">
             <div className="flex items-center gap-3">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
-                <span className="material-symbols-outlined text-lg">hub</span>
-              </div>
-              <span className="text-lg font-extrabold tracking-tight">
+              <Image
+                src="/logo.png"
+                alt="B-IMPACT Alliance"
+                width={128}
+                height={128}
+                className="h-8 w-8 object-contain"
+                itemProp="logo"
+              />
+              <span className="text-lg font-extrabold tracking-tight" itemProp="name">
                 B-IMPACT <span className="text-primary">Alliance</span>
               </span>
             </div>
-            <p className="text-sm text-slate-500 leading-relaxed">
-              부산 아동 청소년 심리지원 네트워크
+            <p className="text-sm text-slate-500 leading-relaxed" itemProp="description">
+              부산 아동·청소년 심리지원 네트워크
               <br />
               공공성을 넘어 지속 가능성으로, 비영리 섹터 AX를 선도합니다.
             </p>
+            <meta itemProp="url" content="https://b-impact.kr" />
           </div>
 
           {/* Links */}
@@ -62,8 +69,14 @@ export default function Footer() {
             <div className="col-span-2 sm:col-span-1">
               <h6 className="font-bold text-sm mb-4 text-slate-900">연락처</h6>
               <ul className="text-sm text-slate-500 space-y-2.5">
-                <li>부산광역시</li>
-                <li>info@b-impact.kr</li>
+                <li itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+                  <span itemProp="addressRegion">부산광역시</span>
+                </li>
+                <li>
+                  <a href="mailto:info@b-impact.kr" className="hover:text-primary transition-colors" itemProp="email">
+                    info@b-impact.kr
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

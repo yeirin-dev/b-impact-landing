@@ -1,6 +1,60 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { organizations, getUniqueRegions } from "@/data/organizations";
+
+export const metadata: Metadata = {
+  title: "B-IMPACT Alliance | 부산 아동·청소년 심리지원 네트워크",
+  description:
+    "공공성을 넘어 지속 가능성으로. 부산 지역 22개 심리지원 전문기관이 연대하는 B-IMPACT Alliance. 아동·청소년 심리상담, 언어치료, 발달재활, 미술치료 전문 네트워크입니다.",
+  alternates: {
+    canonical: "https://b-impact.kr",
+  },
+};
+
+function JsonLd() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "B-IMPACT Alliance",
+    alternateName: "비임팩트 얼라이언스",
+    url: "https://b-impact.kr",
+    logo: "https://b-impact.kr/logo.png",
+    description:
+      "부산 지역 아동·청소년의 건강한 성장을 위해 22개 심리지원 전문기관이 연대하는 협력 네트워크",
+    areaServed: {
+      "@type": "City",
+      name: "부산광역시",
+      "@id": "https://www.wikidata.org/wiki/Q16520",
+    },
+    knowsAbout: [
+      "아동 심리상담",
+      "청소년 심리치료",
+      "언어치료",
+      "발달재활",
+      "미술치료",
+      "놀이치료",
+      "가족상담",
+    ],
+    numberOfEmployees: {
+      "@type": "QuantitativeValue",
+      value: organizations.reduce((a, o) => a + o.members.length, 0),
+    },
+    member: organizations.map((org) => ({
+      "@type": "Organization",
+      name: org.name,
+      description: org.description,
+      areaServed: org.region,
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
 
 export default function Home() {
   const totalOrgs = organizations.length;
@@ -12,6 +66,7 @@ export default function Home() {
 
   return (
     <>
+      <JsonLd />
       {/* ============ HERO ============ */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary-dark to-[#3a0870] text-white">
         {/* Decorative blobs */}
