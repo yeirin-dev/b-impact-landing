@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7317cf",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#191121",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<title>B-IMPACT Alliance - About Us</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-10 py-3 bg-white dark:bg-background-dark sticky top-0 z-50">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-extrabold leading-tight tracking-[-0.015em]">B-IMPACT Alliance</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9">
+<a class="text-slate-900 dark:text-slate-100 text-sm font-semibold hover:text-primary transition-colors" href="#vision">비전</a>
+<a class="text-slate-900 dark:text-slate-100 text-sm font-semibold hover:text-primary transition-colors" href="#values">핵심가치</a>
+<a class="text-slate-900 dark:text-slate-100 text-sm font-semibold hover:text-primary transition-colors" href="#history">연혁</a>
+<a class="text-slate-900 dark:text-slate-100 text-sm font-semibold hover:text-primary transition-colors" href="#leadership">리더십</a>
+</nav>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200">
+<span class="material-symbols-outlined text-lg">globe_asia</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 lg:hidden">
+<span class="material-symbols-outlined text-lg">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center">
+<div class="w-full max-w-5xl px-4 py-8 flex flex-col gap-16">
+<!-- Hero Section -->
+<section class="w-full">
+<div class="relative overflow-hidden rounded-xl h-[400px] flex items-end p-8 md:p-12">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Modern high-tech office interior with purple accent lighting" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(115, 23, 207, 0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8iXjGOM9FCyePONzLBTaC0oNLRBx_taP4v1pLd1bNDVKQUzGQjc9GeUmYWzOkbe-dBN9XnAgZPJePNpi5PrNVlGXDWfB_YACkOxp5dPSOm05T9dIzM0noTO55YijGrMlku6za3VPBzwDr8u08_kpaU1bN4bAOfYX_pYGxYNbZebGdGpKItHKX9uMrWRIQB9kpSmlU1PmU73EXcgxEISs4uzKn8pCdQvzgorSkcNp2wwMOuL0uzxBxa15yu7fClePXKsh7xs8G4aqd');"></div>
+<div class="relative z-10 max-w-2xl">
+<h1 class="text-white text-4xl md:text-5xl font-black mb-4 leading-tight">더 나은 세상을 만드는<br/>임팩트의 연대</h1>
+<p class="text-slate-100 text-lg font-medium opacity-90">B-IMPACT Alliance는 사회적 혁신가들이 연결되어 지속 가능한 가치를 창출하는 글로벌 비즈니스 네트워크입니다.</p>
+</div>
+</div>
+</section>
+<!-- Vision and Mission Section -->
+<section class="grid md:grid-cols-2 gap-12 items-center" id="vision">
+<div class="flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary font-bold text-xs w-fit">
+<span class="material-symbols-outlined text-sm">visibility</span>
+                            VISION &amp; MISSION
+                        </div>
+<h2 class="text-3xl md:text-4xl font-black tracking-tight">지속 가능한 미래를 위한<br/>혁신적인 해결책</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                            우리는 단순한 비즈니스 성공을 넘어, 사회 전체에 긍정적인 파급효과를 미치는 솔루션을 연구하고 전파합니다. 모든 개인이 자신의 잠재력을 발휘하고, 기업이 사회적 책임을 다하는 세상을 꿈꿉니다.
+                        </p>
+<div class="flex flex-col gap-4">
+<div class="flex gap-4 items-start border-l-4 border-primary pl-4">
+<p class="text-slate-800 dark:text-slate-200 font-bold">미션: 긍정적 임팩트의 가속화</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">기술과 휴머니즘의 결합을 통해 사회 문제를 해결하는 비즈니스 모델을 육성합니다.</p>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-2xl bg-primary/5 overflow-hidden border border-slate-200 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Collaborative meeting in a bright workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5bMu9pX74n9wN6CZVfn8W_oxsbf4wdqACOpD57yRfhJ44s1184OkeKld0EvoIujQltwSSe8yq86jRLV8qDwbFjUSiKW3HA1vFUr1-n6nJaZSs--TH_KAFdKnkfOKGyTNPOIOCEPQKGqpCyB0gfKtGeJJWUbNh7X2WSs0hv3cKUMBvmBrfm3d9wClosJJowj7OMBzyakDEfoB3VysCmaJ52tZ2wPpSR747aborcUQFxUgTan4Buh5ecj--JXFQvyvuijt7ujVaNYua"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-xl shadow-xl hidden lg:block">
+<p class="text-3xl font-black">150+</p>
+<p class="text-sm opacity-80">Global Partners</p>
+</div>
+</div>
+</section>
+<!-- Core Values Section -->
+<section class="flex flex-col gap-8" id="values">
+<div class="text-center max-w-2xl mx-auto flex flex-col gap-3">
+<h2 class="text-3xl font-black">핵심 가치</h2>
+<p class="text-slate-500 dark:text-slate-400">우리가 의사결정을 내리고 행동하는 근간이 되는 세 가지 원칙입니다.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-background-dark/50 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl hover:border-primary/50 transition-all group">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<h3 class="text-xl font-bold mb-3">신뢰성 (Reliability)</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">투명한 프로세스와 정직한 결과를 통해 파트너들과 공고한 신뢰 관계를 구축합니다.</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl hover:border-primary/50 transition-all group">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">lightbulb</span>
+</div>
+<h3 class="text-xl font-bold mb-3">혁신 (Innovation)</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">관행에 도전하고 기술의 한계를 넓히며 더 효율적이고 창의적인 해결책을 모색합니다.</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl hover:border-primary/50 transition-all group">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">target</span>
+</div>
+<h3 class="text-xl font-bold mb-3">임팩트 (Impact)</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">단순한 성장을 넘어 사회와 환경에 실질적인 긍정적 변화를 이끌어내는 데 집중합니다.</p>
+</div>
+</div>
+</section>
+<!-- History Section -->
+<section class="bg-slate-50 dark:bg-slate-900/50 rounded-3xl p-8 md:p-12" id="history">
+<div class="max-w-4xl mx-auto flex flex-col gap-10">
+<div class="flex flex-col gap-2">
+<h2 class="text-3xl font-black">연혁</h2>
+<p class="text-slate-500">도전과 성장의 발자취를 소개합니다.</p>
+</div>
+<div class="relative space-y-8 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-primary/30 before:to-transparent">
+<!-- Timeline Items -->
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-white dark:border-slate-800 bg-slate-100 dark:bg-slate-700 text-primary shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex items-center justify-between space-x-2 mb-1">
+<div class="font-bold text-primary">2024</div>
+</div>
+<div class="text-slate-900 dark:text-slate-100 font-semibold mb-1 text-sm">글로벌 임팩트 리포트 발간</div>
+<p class="text-slate-500 text-xs">전 세계 20개국 파트너사와 협력하여 사회적 임팩트 데이터 표준화 완료.</p>
+</div>
+</div>
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-white dark:border-slate-800 bg-slate-100 dark:bg-slate-700 text-primary shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+<span class="material-symbols-outlined text-sm">groups</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex items-center justify-between space-x-2 mb-1">
+<div class="font-bold text-primary">2022</div>
+</div>
+<div class="text-slate-900 dark:text-slate-100 font-semibold mb-1 text-sm">B-IMPACT 아카데미 설립</div>
+<p class="text-slate-500 text-xs">차세대 사회적 기업가 양성을 위한 교육 인프라 구축 및 1기 수료.</p>
+</div>
+</div>
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-white dark:border-slate-800 bg-slate-100 dark:bg-slate-700 text-primary shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+<span class="material-symbols-outlined text-sm">rocket_launch</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex items-center justify-between space-x-2 mb-1">
+<div class="font-bold text-primary">2020</div>
+</div>
+<div class="text-slate-900 dark:text-slate-100 font-semibold mb-1 text-sm">B-IMPACT Alliance 창립</div>
+<p class="text-slate-500 text-xs">임팩트 비즈니스의 새로운 지평을 열기 위해 서울에서 공식 출범.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Section -->
+<section class="flex flex-col gap-8 pb-16" id="leadership">
+<div class="flex flex-col gap-2">
+<h2 class="text-3xl font-black">리더십</h2>
+<p class="text-slate-500">혁신을 이끄는 전문 경영진을 소개합니다.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Leader Card 1 -->
+<div class="group">
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4 bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="Professional portrait of a female executive" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXIbfBR5NAzoIPuuzUjqZLKjDJeWZITPyWvuwt4vQWoSRjssCOS_WKrdk_yvGcDHpG5dYFl__4IJIfttkXkNni-exULIzWDQfs1O_--iTriXM5voBXUNKGTN50UPE2wL-cPV6ZabSWIopCAmKwOXXD7TYXtTL8BiSH_z970C6aK17Q66aj_y7tvlbHNMzrEc060qQqmMdhib_7RpxRCaZSrXqGtjdtjmEB6g9UgGXMtCF4wryFR4PKSnH9YDGOqMLkEVcFHYUdQuQ5"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<div class="flex gap-2 text-white">
+<span class="material-symbols-outlined cursor-pointer hover:scale-110">alternate_email</span>
+<span class="material-symbols-outlined cursor-pointer hover:scale-110">link</span>
+</div>
+</div>
+</div>
+<h4 class="text-lg font-bold">김지현 (Ji-hyun Kim)</h4>
+<p class="text-primary text-sm font-semibold mb-2">대표이사 / CEO</p>
+<p class="text-slate-500 text-xs leading-relaxed line-clamp-2">사회 혁신 전략 전문가로 15년간 다양한 글로벌 프로젝트를 성공적으로 이끌었습니다.</p>
+</div>
+<!-- Leader Card 2 -->
+<div class="group">
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4 bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="Professional portrait of a male executive in a suit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3SNpJDfcW_kJMeIUcZS7dp_41zNDiVUsB-l568yecKNIfoh1D_VGqoD3_85d_uPF1hpuTokWl4kD2ncr7ZMyArf-obbHcX49jK2xoRZd1jkjsQsCttwjItaeqwiBaUH5j1VMw19OEp5w1_p4Yah3Yl-Fe6LxzqWZA4D_VcuBLWevzY6DiasrH26SnQexJZE5l4X06mh_IgViFdR6bi4sBzQIMOohteJAjFu1AG9bHCuCn2QNxgEdYZYcIi0WVleNTG01LMQGUS502"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<div class="flex gap-2 text-white">
+<span class="material-symbols-outlined cursor-pointer hover:scale-110">alternate_email</span>
+<span class="material-symbols-outlined cursor-pointer hover:scale-110">link</span>
+</div>
+</div>
+</div>
+<h4 class="text-lg font-bold">데이비드 리 (David Lee)</h4>
+<p class="text-primary text-sm font-semibold mb-2">기술 이사 / CTO</p>
+<p class="text-slate-500 text-xs leading-relaxed line-clamp-2">데이터 사이언스와 블록체인 기술을 사회 문제 해결에 접목시키는 기술 전문가입니다.</p>
+</div>
+<!-- Leader Card 3 -->
+<div class="group">
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4 bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="Executive portrait of a man in business attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeWhcSiKFrbS8tHdqO1_4UkLNHonDNnrbnlVizA8OEFSBF4Gh5QwRhUGecslnDMMYHsh1HS_Z49XA0R0gOHbBnKhrj2VRhe5LnNc-z832zvCQ18m4iIcTD85pZxGQ9e5IR3xI-OeZThPW9IoPcZkzq2xv-hosmlh-f7pA6LryLs3d2jsZ9RaMA5omwN0XnQWTHA61TuhG8Q80J1JcoC3tSDWnp5Wjcw7w_w7sNypgOhYcCtJ2FBPImCKrr76pQNFSIS_X7o6wDUFQJ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<div class="flex gap-2 text-white">
+<span class="material-symbols-outlined cursor-pointer hover:scale-110">alternate_email</span>
+<span class="material-symbols-outlined cursor-pointer hover:scale-110">link</span>
+</div>
+</div>
+</div>
+<h4 class="text-lg font-bold">박준수 (Jun-su Park)</h4>
+<p class="text-primary text-sm font-semibold mb-2">운영 이사 / COO</p>
+<p class="text-slate-500 text-xs leading-relaxed line-clamp-2">얼라이언스의 글로벌 운영을 총괄하며 지속 가능한 비즈니스 거버넌스를 구축합니다.</p>
+</div>
+<!-- Leader Card 4 -->
+<div class="group">
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4 bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="Portrait of an executive looking confident" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxqbhxcEuyvnZHyI3o1BWWIw9J5n12R_AcFhmQhz0ELqNutyzUYwJ45uaXnwqhAvyQliaGQ6aHuNhySznFtaiM9aYLBhixTOJx2ckI8zuVFX526rv49XAByoakF-ckS9W1mPPP5aZDHvSTvynmT0ti4YWzVLy9fkOT6LlUBE3YI3b6uSZ3q2gwPnPTnff1aILtVf3BELbgYIWOtrFxc5wTO8eH5jPSu2oorbyCXFdynUY9oAbXs9RK4WUTDiGMOFe-g4lW9GYy5ttd"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<div class="flex gap-2 text-white">
+<span class="material-symbols-outlined cursor-pointer hover:scale-110">alternate_email</span>
+<span class="material-symbols-outlined cursor-pointer hover:scale-110">link</span>
+</div>
+</div>
+</div>
+<h4 class="text-lg font-bold">최수빈 (Soo-bin Choi)</h4>
+<p class="text-primary text-sm font-semibold mb-2">재무 이사 / CFO</p>
+<p class="text-slate-500 text-xs leading-relaxed line-clamp-2">임팩트 투자와 사회적 금융 모델 설계를 담당하며 자본의 선순환을 지원합니다.</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 py-12">
+<div class="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-1">
+<div class="flex items-center gap-2 text-primary mb-4">
+<div class="size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="font-black text-lg text-slate-900 dark:text-slate-100">B-IMPACT</span>
+</div>
+<p class="text-slate-500 text-xs leading-relaxed">
+                        서울특별시 강남구 테헤란로 123, 임팩트 타워 15층<br/>
+                        © 2024 B-IMPACT Alliance. All Rights Reserved.
+                    </p>
+</div>
+<div>
+<h5 class="font-bold text-sm mb-4">회사 소개</h5>
+<ul class="text-slate-500 text-xs space-y-2">
+<li><a class="hover:text-primary transition-colors" href="#">비전 및 미션</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">채용 안내</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">뉴스룸</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-sm mb-4">리소스</h5>
+<ul class="text-slate-500 text-xs space-y-2">
+<li><a class="hover:text-primary transition-colors" href="#">임팩트 리포트</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">파트너십 가이드</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">블로그</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-sm mb-4">문의하기</h5>
+<ul class="text-slate-500 text-xs space-y-2">
+<li>hello@b-impact.org</li>
+<li>02-1234-5678</li>
+<li class="flex gap-4 mt-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary">language</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary">share</span>
+</li>
+</ul>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

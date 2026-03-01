@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://b-impact.kr";
+  const baseUrl = "https://b-impact.yeirin.com";
 
   return [
     {

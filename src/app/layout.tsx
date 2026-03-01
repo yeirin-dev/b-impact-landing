@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const SITE_URL = "https://b-impact.kr";
+const SITE_URL = "https://b-impact.yeirin.com";
 const SITE_NAME = "B-IMPACT Alliance";
 
 export const metadata: Metadata = {

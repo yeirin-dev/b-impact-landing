@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://b-impact.kr/sitemap.xml",
+    sitemap: "https://b-impact.yeirin.com/sitemap.xml",
   };
 }

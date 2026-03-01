@@ -26,7 +26,7 @@ export default function Footer() {
               <br />
               공공성을 넘어 지속 가능성으로, 비영리 섹터 AX를 선도합니다.
             </p>
-            <meta itemProp="url" content="https://b-impact.kr" />
+            <meta itemProp="url" content="https://b-impact.yeirin.com" />
           </div>
 
           {/* Links */}

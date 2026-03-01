@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "참여기관 22곳 | B-IMPACT Alliance",
     description:
       "부산 10개 자치구에서 아동·청소년 심리지원에 참여하는 22개 전문기관을 만나보세요.",
-    url: "https://b-impact.kr/organizations",
+    url: "https://b-impact.yeirin.com/organizations",
     images: [
       {
         url: "/og-image.png",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "부산 10개 자치구에서 아동·청소년 심리지원에 참여하는 22개 전문기관을 만나보세요.",
   },
   alternates: {
-    canonical: "https://b-impact.kr/organizations",
+    canonical: "https://b-impact.yeirin.com/organizations",
   },
 };
 

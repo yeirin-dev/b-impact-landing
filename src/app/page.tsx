@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "공공성을 넘어 지속 가능성으로. 부산 지역 22개 심리지원 전문기관이 연대하는 B-IMPACT Alliance. 아동·청소년 심리상담, 언어치료, 발달재활, 미술치료 전문 네트워크입니다.",
   alternates: {
-    canonical: "https://b-impact.kr",
+    canonical: "https://b-impact.yeirin.com",
   },
 };
 
@@ -18,8 +18,8 @@ function JsonLd() {
     "@type": "Organization",
     name: "B-IMPACT Alliance",
     alternateName: "비임팩트 얼라이언스",
-    url: "https://b-impact.kr",
-    logo: "https://b-impact.kr/logo.png",
+    url: "https://b-impact.yeirin.com",
+    logo: "https://b-impact.yeirin.com/logo.png",
     description:
       "부산 지역 아동·청소년의 건강한 성장을 위해 22개 심리지원 전문기관이 연대하는 협력 네트워크",
     areaServed: {
