@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PopupAd from "@/components/PopupAd";
 
 const SITE_URL = "https://b-impact.yeirin.com";
 const SITE_NAME = "B-IMPACT Alliance";
@@ -110,6 +111,7 @@ export default function RootLayout({
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <PopupAd />
       </body>
     </html>
   );
