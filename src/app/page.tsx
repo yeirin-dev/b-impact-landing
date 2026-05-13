@@ -187,17 +187,15 @@ export default function Home() {
 
             {/* Visual */}
             <div className="relative">
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/10 flex items-center justify-center">
-                <div className="text-center px-8">
-                  <span className="material-symbols-outlined text-8xl text-primary/30 mb-4">
-                    psychology
-                  </span>
-                  <p className="text-slate-400 text-sm font-medium">
-                    아동·청소년 심리지원의 새로운 패러다임
-                  </p>
-                </div>
+              <div className="aspect-square rounded-3xl overflow-hidden">
+                <img
+                    src="/about-hero.png"
+                    alt="아동·청소년 심리지원"
+                    className="w-full h-full object-cover"
+                />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-primary text-white p-5 rounded-xl shadow-xl hidden lg:block">
+              <div
+                  className="absolute -bottom-6 -right-6 bg-primary text-white p-5 rounded-xl shadow-xl hidden lg:block">
                 <p className="text-2xl font-extrabold">{totalOrgs}개</p>
                 <p className="text-sm text-white/80">참여기관</p>
               </div>
@@ -350,7 +348,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="mailto:info@b-impact.kr"
+                  href="mailto:yeirin2023@gmail.com"
                   className="px-10 py-4 bg-white text-primary font-bold rounded-xl hover:bg-slate-100 transition-colors shadow-lg"
                 >
                   문의하기
