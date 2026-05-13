@@ -67,14 +67,11 @@ export default function Footer() {
               </ul>
             </div>
             <div className="col-span-2 sm:col-span-1">
-              <h6 className="font-bold text-sm mb-4 text-slate-900">연락처</h6>
+              <h6 className="font-bold text-sm mb-4 text-slate-900">이메일</h6>
               <ul className="text-sm text-slate-500 space-y-2.5">
-                <li itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-                  <span itemProp="addressRegion">부산광역시</span>
-                </li>
                 <li>
-                  <a href="mailto:info@b-impact.kr" className="hover:text-primary transition-colors" itemProp="email">
-                    info@b-impact.kr
+                  <a href="mailto:yeirin2023@gmail.com" className="hover:text-primary transition-colors" itemProp="email">
+                    yeirin2023@gmail.com
                   </a>
                 </li>
               </ul>
