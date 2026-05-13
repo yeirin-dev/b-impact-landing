@@ -70,8 +70,7 @@ export default function Footer() {
               <h6 className="font-bold text-sm mb-4 text-slate-900">이메일</h6>
               <ul className="text-sm text-slate-500 space-y-2.5">
                 <li>
-                  <a href="mailto:yeirin2023@gmail.com" className="hover:text-primary transition-colors"
-                     itemProp="email">
+                  <a href="mailto:yeirin2023@gmail.com" className="hover:text-primary transition-colors" itemProp="email">
                     yeirin2023@gmail.com
                   </a>
                 </li>
