@@ -187,15 +187,16 @@ export default function Home() {
 
             {/* Visual */}
             <div className="relative">
-              <div className="aspect-square rounded-3xl overflow-hidden">
-                <img
-                    src="/about-hero.png"
-                    alt="아동·청소년 심리지원"
-                    className="w-full h-full object-cover"
+              <div className="relative aspect-square rounded-3xl overflow-hidden">
+                <Image
+                  src="/about-hero.png"
+                  alt="아동·청소년 심리지원"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
-              <div
-                  className="absolute -bottom-6 -right-6 bg-primary text-white p-5 rounded-xl shadow-xl hidden lg:block">
+              <div className="absolute -bottom-6 -right-6 bg-primary text-white p-5 rounded-xl shadow-xl hidden lg:block">
                 <p className="text-2xl font-extrabold">{totalOrgs}개</p>
                 <p className="text-sm text-white/80">참여기관</p>
               </div>
